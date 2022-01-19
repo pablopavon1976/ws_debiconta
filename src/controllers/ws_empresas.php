@@ -19,6 +19,7 @@ $app->get('/empresas',function(Request $request,Response $response){
         // }
     }catch (Throwable $e) {
         $o_respuesta=array('error'=>'9999','mensaje'=>$e->getMessage());
+        
     }
    
     $response->getBody()->write(enviarRespuesta($i_accept,$o_respuesta));
