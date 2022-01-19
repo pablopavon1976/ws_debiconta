@@ -1,0 +1,1410 @@
+2022/01/19 18:22:41:  LISTA 
+2022/01/19 18:22:41:  DATOS DE ENTRADA
+2022/01/19 18:22:41:  Consulta: SELECT COD_EMPRESA,
+                            NOMBRE_COMERCIAL,
+                            IDENTIFICACION,
+                            TIPO_DE_IDENTIFICACION
+                     FROM EMPRESA
+2022/01/19 18:22:41:  Respuesta: array (
+  'error' => '0',
+  'mensaje' => 'ok',
+  'datos' => 
+  array (
+    0 => 
+    array (
+      'COD_EMPRESA' => '1',
+      'NOMBRE_COMERCIAL' => 'Demo',
+      'IDENTIFICACION' => '9999999999',
+      'TIPO_DE_IDENTIFICACION' => 'Cédula',
+    ),
+    1 => 
+    array (
+      'COD_EMPRESA' => '2',
+      'NOMBRE_COMERCIAL' => 'OVIEDO 017',
+      'IDENTIFICACION' => '1090012483001',
+      'TIPO_DE_IDENTIFICACION' => 'Ruc',
+    ),
+    2 => 
+    array (
+      'COD_EMPRESA' => '4',
+      'NOMBRE_COMERCIAL' => 'UNIDAD EDUCATIVA PARTICULAR OVIEDO',
+      'IDENTIFICACION' => '1002485074001',
+      'TIPO_DE_IDENTIFICACION' => 'Ruc',
+    ),
+  ),
+)
+2022/01/19 18:23:49:  LISTA 
+2022/01/19 18:23:49:  DATOS DE ENTRADA
+2022/01/19 18:23:49:  Consulta: SELECT ID_PLAN_DE_CUENTA, CODIGO + ' - ' + NOMBRE AS CUENTA
+                        FROM        PLAN_CUENTAS
+                        WHERE        (COD_EMPRESA = 4) AND (TIPO = 'M')
+                        ORDER BY CODIGO
+2022/01/19 18:23:49:  Respuesta: array (
+  'error' => '0',
+  'mensaje' => 'ok',
+  'datos' => 
+  array (
+    0 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2257',
+      'CUENTA' => '1.1.01.01.01 - Caja General',
+    ),
+    1 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2258',
+      'CUENTA' => '1.1.01.01.02 - Caja Menor',
+    ),
+    2 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2623',
+      'CUENTA' => '1.1.01.01.03 - Caja pablo',
+    ),
+    3 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2260',
+      'CUENTA' => '1.1.01.05.01 - Banco Internacional Cta Cte N.',
+    ),
+    4 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2261',
+      'CUENTA' => '1.1.01.05.02 - Banco Rumiñahui Cta Cte N.',
+    ),
+    5 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2262',
+      'CUENTA' => '1.1.01.05.51 - Banco Internacional Cta Aho. N.',
+    ),
+    6 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2622',
+      'CUENTA' => '1.1.01.05.51.01 - Cierre de TARJETAS DE CREDITO',
+    ),
+    7 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2263',
+      'CUENTA' => '1.1.01.05.52 - Banco Rumiñahui  cta  Ahorros N',
+    ),
+    8 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2265',
+      'CUENTA' => '1.1.07.01.03 - Instituciones Educativas - CXC AÑOS ANTERIORES',
+    ),
+    9 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2266',
+      'CUENTA' => '1.1.07.01.04 - Sueldos',
+    ),
+    10 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2267',
+      'CUENTA' => '1.1.07.01.05 - Particulares',
+    ),
+    11 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2268',
+      'CUENTA' => '1.1.07.01.06 - Pensiones por Cobrar',
+    ),
+    12 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2270',
+      'CUENTA' => '1.1.07.03.03 - CXC Fraternidades',
+    ),
+    13 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2271',
+      'CUENTA' => '1.1.07.03.05 - CxC Obras',
+    ),
+    14 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2273',
+      'CUENTA' => '1.1.07.05.01 - Consejo General o Provincial',
+    ),
+    15 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2274',
+      'CUENTA' => '1.1.07.05.03 - Hermanas',
+    ),
+    16 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2276',
+      'CUENTA' => '1.1.07.09.01 - A Proveedores',
+    ),
+    17 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2277',
+      'CUENTA' => '1.1.07.09.03 - A Contratistas',
+    ),
+    18 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2278',
+      'CUENTA' => '1.1.07.09.05 - A Trabajadores',
+    ),
+    19 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2280',
+      'CUENTA' => '1.1.07.10.01 - Retenciones del IVA recibidas',
+    ),
+    20 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2281',
+      'CUENTA' => '1.1.07.10.02 - Retenciones del IR recibidas',
+    ),
+    21 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2282',
+      'CUENTA' => '1.1.07.10.03 - Anticipo IR realizado',
+    ),
+    22 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2283',
+      'CUENTA' => '1.1.07.10.04 - Crédito Tributario IVA en Compras',
+    ),
+    23 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2284',
+      'CUENTA' => '1.1.07.10.05 - Otros impuestos',
+    ),
+    24 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2286',
+      'CUENTA' => '1.1.07.99.01 - Provisión para Cuentas Incobrables (CA)',
+    ),
+    25 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2290',
+      'CUENTA' => '1.5.01.05.01 - Equipo de Laboratorio',
+    ),
+    26 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2291',
+      'CUENTA' => '1.5.01.05.02 - Equipo Medico',
+    ),
+    27 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2292',
+      'CUENTA' => '1.5.01.05.03 - Maquinaria y Equipo',
+    ),
+    28 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2293',
+      'CUENTA' => '1.5.01.05.04 - Equipo de Oficina',
+    ),
+    29 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2294',
+      'CUENTA' => '1.5.01.05.51 - Dep. Equipo de Laboratorio',
+    ),
+    30 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2295',
+      'CUENTA' => '1.5.01.05.52 - Dep. Equipo Medico',
+    ),
+    31 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2296',
+      'CUENTA' => '1.5.01.05.53 - Dep. Equipo de Oficina',
+    ),
+    32 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2297',
+      'CUENTA' => '1.5.01.05.54 - Dep. Maq y Equi',
+    ),
+    33 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2299',
+      'CUENTA' => '1.5.01.07.01 - Muebles y Enseres',
+    ),
+    34 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2300',
+      'CUENTA' => '1.5.01.07.02 - Instrumentos y Herramientas',
+    ),
+    35 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2301',
+      'CUENTA' => '1.5.01.07.51 - Dep. Muebles y Enseres',
+    ),
+    36 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2302',
+      'CUENTA' => '1.5.01.07.52 - Dep. Instrumentos Herramientas',
+    ),
+    37 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2304',
+      'CUENTA' => '1.5.01.09.01 - Equipo de Procesamiento de Datos',
+    ),
+    38 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2305',
+      'CUENTA' => '1.5.01.09.02 - Dep. Equipo de Procesamiento de Datos',
+    ),
+    39 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2306',
+      'CUENTA' => '1.5.01.09.04 - Equipo de Telecomunicaciones',
+    ),
+    40 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2307',
+      'CUENTA' => '1.5.01.09.05 - Dep. Equipo de Telecomunciaciones',
+    ),
+    41 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2309',
+      'CUENTA' => '1.5.01.11.01 - Autos Camionetas y Camperos',
+    ),
+    42 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2310',
+      'CUENTA' => '1.5.01.11.51 - Dep. Autos Camionetas y Camperos',
+    ),
+    43 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2312',
+      'CUENTA' => '1.5.01.13.01 - Obras de Arte',
+    ),
+    44 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2313',
+      'CUENTA' => '1.5.01.13.02 - Biblioteca',
+    ),
+    45 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2314',
+      'CUENTA' => '1.5.01.13.03 - Culto',
+    ),
+    46 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2316',
+      'CUENTA' => '1.5.03.01.01 - Programas para Computador (Software)',
+    ),
+    47 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2317',
+      'CUENTA' => '1.5.03.01.02 - Amort. Programas para Computador (Software)',
+    ),
+    48 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2321',
+      'CUENTA' => '1.9.01.01.01 - Vehìculo',
+    ),
+    49 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2326',
+      'CUENTA' => '2.1.05.05.01 - Sobregiros',
+    ),
+    50 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2328',
+      'CUENTA' => '2.1.05.10.01 - Particulares',
+    ),
+    51 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2332',
+      'CUENTA' => '2.2.05.05.01 - Proveedores de Bienes',
+    ),
+    52 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2333',
+      'CUENTA' => '2.2.05.05.02 - Proveedores de Servicios',
+    ),
+    53 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2334',
+      'CUENTA' => '2.2.05.05.04 - Proveedores Acueducto y Alcantarillado',
+    ),
+    54 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2335',
+      'CUENTA' => '2.2.05.05.05 - Proveedores Energía',
+    ),
+    55 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2336',
+      'CUENTA' => '2.2.05.05.06 - Proveedores Teléfono',
+    ),
+    56 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2340',
+      'CUENTA' => '2.3.10.10.10 - Cuota Congregacional a Caja Provincial de Obr',
+    ),
+    57 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2342',
+      'CUENTA' => '2.3.20.05.01 - Contratistas',
+    ),
+    58 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2344',
+      'CUENTA' => '2.3.65.10.001 - Porcentaje 1%',
+    ),
+    59 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2345',
+      'CUENTA' => '2.3.65.10.002 - Porcentaje 2%',
+    ),
+    60 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2346',
+      'CUENTA' => '2.3.65.10.011 - Porcentaje 8%',
+    ),
+    61 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2347',
+      'CUENTA' => '2.3.65.10.021 - Porcentaje 10%',
+    ),
+    62 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2349',
+      'CUENTA' => '2.3.66.15.001 - Retención IVA 30%',
+    ),
+    63 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2350',
+      'CUENTA' => '2.3.66.15.002 - Retencion IVA 70%',
+    ),
+    64 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2351',
+      'CUENTA' => '2.3.66.15.003 - Retencion IVA 100%',
+    ),
+    65 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2352',
+      'CUENTA' => '2.3.66.15.004 - Retención Otros Porcentajes IVA',
+    ),
+    66 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2353',
+      'CUENTA' => '2.3.66.15.005 - En Relacion de Dependencia',
+    ),
+    67 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2354',
+      'CUENTA' => '2.3.66.15.006 - Retencion IVA 100% L/C',
+    ),
+    68 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2356',
+      'CUENTA' => '2.3.70.05.01 - Aportes IESS - PERSONAL',
+    ),
+    69 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2357',
+      'CUENTA' => '2.3.70.05.02 - Aportes IESS - PATRONAL',
+    ),
+    70 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2358',
+      'CUENTA' => '2.3.70.05.10 - Préstamos IESS',
+    ),
+    71 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2359',
+      'CUENTA' => '2.3.70.05.15 - Fondo Reserva',
+    ),
+    72 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2361',
+      'CUENTA' => '2.3.70.95.01 - Retenciones de Alimentos',
+    ),
+    73 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2362',
+      'CUENTA' => '2.3.70.95.02 - Retenciones Autorizadas',
+    ),
+    74 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2363',
+      'CUENTA' => '2.3.70.95.03 - Ahorro y Prestamos Profesores',
+    ),
+    75 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2367',
+      'CUENTA' => '2.5.05.05.01 - Salarios por Pagar',
+    ),
+    76 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2371',
+      'CUENTA' => '2.6.10.05.05 - Décimo Tercero',
+    ),
+    77 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2372',
+      'CUENTA' => '2.6.10.05.06 - Décimo Cuarto',
+    ),
+    78 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2373',
+      'CUENTA' => '2.6.10.05.07 - Vacaciones',
+    ),
+    79 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2374',
+      'CUENTA' => '2.6.10.05.08 - Jubilación Patronal',
+    ),
+    80 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2375',
+      'CUENTA' => '2.6.10.05.09 - Fondos de Reserva',
+    ),
+    81 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2377',
+      'CUENTA' => '2.6.30.05.01 - Provisión Mantenimento y Reparaciones',
+    ),
+    82 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2381',
+      'CUENTA' => '2.7.05.05.01 - Pensiones Prefacturadas',
+    ),
+    83 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2382',
+      'CUENTA' => '2.7.05.05.02 - Matriculas y Pensiones (Prorrateada)',
+    ),
+    84 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2386',
+      'CUENTA' => '2.8.10.95.04 - Depósitos Recibidos por Identificar',
+    ),
+    85 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2391',
+      'CUENTA' => '3.1.05.05.09 - Caja General o Provincial',
+    ),
+    86 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2392',
+      'CUENTA' => '3.1.05.05.10 - Fondo Social',
+    ),
+    87 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2396',
+      'CUENTA' => '3.3.05.05.01 - Reservas Ocasionales',
+    ),
+    88 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2400',
+      'CUENTA' => '3.6.05.05.01 - Excedente del Ejercicio',
+    ),
+    89 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2402',
+      'CUENTA' => '3.6.10.05.01 - Pérdida del Ejercicio',
+    ),
+    90 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2406',
+      'CUENTA' => '3.7.05.05.01 - Excedentes Acumulados Operación',
+    ),
+    91 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2411',
+      'CUENTA' => '4.2.01.01.01 - Matrículas',
+    ),
+    92 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2412',
+      'CUENTA' => '4.2.01.01.02 - Pensiones',
+    ),
+    93 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2413',
+      'CUENTA' => '4.2.02.01.01 - Becas Totales',
+    ),
+    94 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2414',
+      'CUENTA' => '4.2.02.01.02 - Becas Parciales',
+    ),
+    95 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2415',
+      'CUENTA' => '4.2.02.01.03 - Devoluciones  Matrículas y Pensiones',
+    ),
+    96 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2416',
+      'CUENTA' => '4.2.02.01.04 - Descuentos en Pensiones',
+    ),
+    97 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2419',
+      'CUENTA' => '4.2.04.01.01 - Actividades Extracurriculares',
+    ),
+    98 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2420',
+      'CUENTA' => '4.2.04.01.02 - Actividades Conexas V.',
+    ),
+    99 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2421',
+      'CUENTA' => '4.2.04.01.03 - Actividades Conexas S.',
+    ),
+    100 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2424',
+      'CUENTA' => '4.2.05.01.01 - Arrendamientos a entes Privados',
+    ),
+    101 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2427',
+      'CUENTA' => '4.2.07.01.01 - Recuperaciones Empleados',
+    ),
+    102 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2428',
+      'CUENTA' => '4.2.07.01.02 - Recuperaciones Terceros',
+    ),
+    103 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2432',
+      'CUENTA' => '4.5.01.01.01 - Intereses Financieros',
+    ),
+    104 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2433',
+      'CUENTA' => '4.5.01.01.03 - Diferencia en Cambio',
+    ),
+    105 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2438',
+      'CUENTA' => '4.9.01.01.03 - Aportes de Provincia cr',
+    ),
+    106 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2441',
+      'CUENTA' => '4.9.03.01.01 - Aportes de Fraternidad  cr',
+    ),
+    107 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2442',
+      'CUENTA' => '4.9.03.01.02 - Aportes de Obra cr',
+    ),
+    108 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2443',
+      'CUENTA' => '4.9.03.01.03 - Aportes de Provincia cr',
+    ),
+    109 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2448',
+      'CUENTA' => '5.2.01.01.01 - Sueldos Directivos',
+    ),
+    110 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2449',
+      'CUENTA' => '5.2.01.01.02 - Sueldos Docentes',
+    ),
+    111 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2450',
+      'CUENTA' => '5.2.01.01.03 - Suedos Personal de Apoyo',
+    ),
+    112 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2451',
+      'CUENTA' => '5.2.01.01.04 - Sueldos Administrativos',
+    ),
+    113 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2452',
+      'CUENTA' => '5.2.01.01.05 - Sueldos Consejeria',
+    ),
+    114 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2454',
+      'CUENTA' => '5.2.01.02.01 - Horas Extras y Recargos Directivos',
+    ),
+    115 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2455',
+      'CUENTA' => '5.2.01.02.02 - Horas Extras y Recargos Docentes',
+    ),
+    116 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2456',
+      'CUENTA' => '5.2.01.02.03 - Horas Extras y Recargos Personal de Apoyo',
+    ),
+    117 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2457',
+      'CUENTA' => '5.2.01.02.04 - Horas Extras y Recargos Administrativos',
+    ),
+    118 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2458',
+      'CUENTA' => '5.2.01.02.05 - Horas Extras y Recargos Consejería',
+    ),
+    119 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2460',
+      'CUENTA' => '5.2.01.10.01 - Bonificaciones Directivos',
+    ),
+    120 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2461',
+      'CUENTA' => '5.2.01.10.02 - Bonificaciones Docentes',
+    ),
+    121 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2462',
+      'CUENTA' => '5.2.01.10.03 - Bonificaciones Personal de Apoyo',
+    ),
+    122 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2463',
+      'CUENTA' => '5.2.01.10.04 - Bonificaciones Administrativos',
+    ),
+    123 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2464',
+      'CUENTA' => '5.2.01.10.05 - Bonificaciones Consejería',
+    ),
+    124 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2465',
+      'CUENTA' => '5.2.01.10.06 - Capacitaciones Personal',
+    ),
+    125 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2466',
+      'CUENTA' => '5.2.01.10.07 - Vacaciones Empleados',
+    ),
+    126 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2468',
+      'CUENTA' => '5.2.01.11.01 - Décimo Tercero Directivos',
+    ),
+    127 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2469',
+      'CUENTA' => '5.2.01.11.02 - Décimo Tercero Docentes',
+    ),
+    128 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2470',
+      'CUENTA' => '5.2.01.11.03 - Décimo Tercero Personal de Apoyo',
+    ),
+    129 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2471',
+      'CUENTA' => '5.2.01.11.04 - Décimo Tercero Administrativos',
+    ),
+    130 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2472',
+      'CUENTA' => '5.2.01.11.05 - Décimo Tercero Consejería',
+    ),
+    131 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2474',
+      'CUENTA' => '5.2.01.12.01 - Décimo Cuarto Directivos',
+    ),
+    132 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2475',
+      'CUENTA' => '5.2.01.12.02 - Décimo Cuarto Docentes',
+    ),
+    133 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2476',
+      'CUENTA' => '5.2.01.12.03 - Décimo Cuarto Personal de Apoyo',
+    ),
+    134 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2477',
+      'CUENTA' => '5.2.01.12.04 - Décimo Cuarto Administrativos',
+    ),
+    135 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2478',
+      'CUENTA' => '5.2.01.12.05 - Décimo Cuarto Consejería',
+    ),
+    136 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2480',
+      'CUENTA' => '5.2.01.13.01 - Fondo de Reserva Rol Directivos',
+    ),
+    137 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2481',
+      'CUENTA' => '5.2.01.13.02 - Fondo de Reserva Rol Docentes',
+    ),
+    138 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2482',
+      'CUENTA' => '5.2.01.13.03 - Fondo de Reserva Rol Personal de Apoyo',
+    ),
+    139 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2483',
+      'CUENTA' => '5.2.01.13.04 - Fondo de Reserva Rol Administrativos',
+    ),
+    140 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2484',
+      'CUENTA' => '5.2.01.13.05 - Fondo de Reserva Rol Consejería',
+    ),
+    141 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2486',
+      'CUENTA' => '5.2.01.14.01 - Jubilación Patronal Directivos',
+    ),
+    142 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2487',
+      'CUENTA' => '5.2.01.14.02 - Jubilación Patronal Docentes',
+    ),
+    143 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2488',
+      'CUENTA' => '5.2.01.14.03 - Jubilación Patronal Personal de Apoyo',
+    ),
+    144 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2489',
+      'CUENTA' => '5.2.01.14.04 - Jubilación Patronal Administrativos',
+    ),
+    145 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2490',
+      'CUENTA' => '5.2.01.14.05 - Jubilación Patronal Consejería',
+    ),
+    146 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2492',
+      'CUENTA' => '5.2.01.15.01 - Desahucio e Indemnizaciones Laborales Directivos',
+    ),
+    147 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2493',
+      'CUENTA' => '5.2.01.15.02 - Desahucio e Indemnizaciones Laborales Docentes',
+    ),
+    148 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2494',
+      'CUENTA' => '5.2.01.15.03 - Desahucio e Indemnizaciones Laborales Personal de Apoyo',
+    ),
+    149 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2495',
+      'CUENTA' => '5.2.01.15.04 - Desahucio e Indemnizaciones Laborales Administrativos',
+    ),
+    150 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2496',
+      'CUENTA' => '5.2.01.15.05 - Desahucio e Indemnizaciones Laborales Consejería',
+    ),
+    151 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2499',
+      'CUENTA' => '5.2.03.01.01 - Aportes Seguridad Social Directivos',
+    ),
+    152 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2500',
+      'CUENTA' => '5.2.03.01.02 - Aportes Seguridad Social Docentes',
+    ),
+    153 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2501',
+      'CUENTA' => '5.2.03.01.03 - Aportes Seguridad Social Personal de Apoyo',
+    ),
+    154 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2502',
+      'CUENTA' => '5.2.03.01.04 - Aportes Seguridad Social Administrativos',
+    ),
+    155 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2503',
+      'CUENTA' => '5.2.03.01.05 - Aportes Seguridad Social Consejería',
+    ),
+    156 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2506',
+      'CUENTA' => '5.2.05.01.01 - Revisoría Fiscal (Contador)',
+    ),
+    157 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2507',
+      'CUENTA' => '5.2.05.01.02 - Asesoría Jurídica',
+    ),
+    158 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2508',
+      'CUENTA' => '5.2.05.01.03 - Asesoría Pedagógica',
+    ),
+    159 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2509',
+      'CUENTA' => '5.2.05.01.04 - Asesorias y Consultorias',
+    ),
+    160 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2510',
+      'CUENTA' => '5.2.05.01.05 - Asesoria Tecnica',
+    ),
+    161 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2513',
+      'CUENTA' => '5.2.07.01.02 - De Vehículos',
+    ),
+    162 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2516',
+      'CUENTA' => '5.2.10.01.01 - FEDEC Y CONFEDEC',
+    ),
+    163 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2517',
+      'CUENTA' => '5.2.10.01.02 - Impuestos Tasas y Otras Contribuciones',
+    ),
+    164 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2520',
+      'CUENTA' => '5.2.11.01.01 - Flota y Equipo de Transporte',
+    ),
+    165 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2521',
+      'CUENTA' => '5.2.11.01.02 - De Bienes',
+    ),
+    166 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2524',
+      'CUENTA' => '5.2.13.01.01 - Acueducto y alcantarillado',
+    ),
+    167 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2525',
+      'CUENTA' => '5.2.13.01.02 - Energía Eléctrica',
+    ),
+    168 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2526',
+      'CUENTA' => '5.2.13.01.03 - Teléfono',
+    ),
+    169 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2527',
+      'CUENTA' => '5.2.13.01.04 - Internet',
+    ),
+    170 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2528',
+      'CUENTA' => '5.2.13.01.05 - Gas',
+    ),
+    171 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2529',
+      'CUENTA' => '5.2.13.01.06 - Servicio de Aseo y Recolección',
+    ),
+    172 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2532',
+      'CUENTA' => '5.2.15.01.01 - Servicios Personales Predomonio Mano Obra',
+    ),
+    173 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2533',
+      'CUENTA' => '5.2.15.01.02 - Correo y Encomiendas',
+    ),
+    174 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2534',
+      'CUENTA' => '5.2.15.01.03 - Transporte Fletes y Acarreos',
+    ),
+    175 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2535',
+      'CUENTA' => '5.2.15.01.04 - Vigilancia',
+    ),
+    176 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2536',
+      'CUENTA' => '5.2.15.01.05 - Servicio de Limpieza',
+    ),
+    177 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2537',
+      'CUENTA' => '5.2.15.01.06 - Licencias y Soporte Técnico',
+    ),
+    178 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2540',
+      'CUENTA' => '5.2.17.01.01 - Notariales',
+    ),
+    179 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2541',
+      'CUENTA' => '5.2.17.01.02 - Trámites y Licencias',
+    ),
+    180 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2544',
+      'CUENTA' => '5.2.19.01.01 - Mantenimiento Inmuebles',
+    ),
+    181 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2545',
+      'CUENTA' => '5.2.19.01.02 - Mantenimiento Flota y Equipo de Transporte',
+    ),
+    182 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2546',
+      'CUENTA' => '5.2.19.01.03 - Mantenimiento Jardines, Huertas, Finca',
+    ),
+    183 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2547',
+      'CUENTA' => '5.2.19.01.04 - Mantenimiento Maquinaria y Equipo',
+    ),
+    184 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2548',
+      'CUENTA' => '5.2.19.01.05 - Mantenimiento Muebles y Enseres',
+    ),
+    185 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2549',
+      'CUENTA' => '5.2.19.01.06 - Mantenimiento Equipo de Computo',
+    ),
+    186 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2550',
+      'CUENTA' => '5.2.19.01.08 - Mantenimiento Bienes de Arte y Culto',
+    ),
+    187 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2553',
+      'CUENTA' => '5.2.21.01.01 - Alojamiento y Manutención',
+    ),
+    188 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2554',
+      'CUENTA' => '5.2.21.01.02 - Viajes Aereos',
+    ),
+    189 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2555',
+      'CUENTA' => '5.2.21.01.03 - Viajes Terrestres',
+    ),
+    190 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2558',
+      'CUENTA' => '5.2.23.01.01 - Dep. Edificios',
+    ),
+    191 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2559',
+      'CUENTA' => '5.2.23.01.02 - Dep. Maquinaria y Equipo',
+    ),
+    192 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2560',
+      'CUENTA' => '5.2.23.01.03 - Dep. Muebles Oficina',
+    ),
+    193 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2561',
+      'CUENTA' => '5.2.23.01.04 - Dep. Equipos de Procesamiento de Datos',
+    ),
+    194 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2562',
+      'CUENTA' => '5.2.23.01.05 - Dep. Vehículos',
+    ),
+    195 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2563',
+      'CUENTA' => '5.2.23.01.06 - Dep. Equipo Lab',
+    ),
+    196 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2564',
+      'CUENTA' => '5.2.23.01.07 - Dep. Equipo Medico',
+    ),
+    197 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2565',
+      'CUENTA' => '5.2.23.01.08 - Dep. Equipo Oficina',
+    ),
+    198 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2566',
+      'CUENTA' => '5.2.23.01.09 - Dep. Instrumentos y Herramientas',
+    ),
+    199 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2569',
+      'CUENTA' => '5.2.25.01.01 - Programas para Computador (Software)Licencia',
+    ),
+    200 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2570',
+      'CUENTA' => '5.2.25.01.21 - Programas para Computador (Software)Licencia Admon',
+    ),
+    201 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2573',
+      'CUENTA' => '5.2.29.01.01 - Alimentación, Refrigerios',
+    ),
+    202 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2574',
+      'CUENTA' => '5.2.29.01.02 - Libros suscripciones periodicos y revistas',
+    ),
+    203 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2575',
+      'CUENTA' => '5.2.29.01.03 - Elementos de aseo general',
+    ),
+    204 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2576',
+      'CUENTA' => '5.2.29.01.05 - Utiles y Papeleria fotocopias',
+    ),
+    205 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2577',
+      'CUENTA' => '5.2.29.01.06 - Taxis, Buses, Peajes, Parq.',
+    ),
+    206 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2578',
+      'CUENTA' => '5.2.29.01.07 - Retiros Encuentros,',
+    ),
+    207 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2579',
+      'CUENTA' => '5.2.29.01.10 - Gastos Medicamentos - Botiquin',
+    ),
+    208 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2580',
+      'CUENTA' => '5.2.29.01.11 - Elementos Eucarísticos y de Culto',
+    ),
+    209 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2581',
+      'CUENTA' => '5.2.29.01.12 - Combustibles y lubricantes',
+    ),
+    210 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2582',
+      'CUENTA' => '5.2.29.01.13 - Estipendios Celebraciones Misas',
+    ),
+    211 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2583',
+      'CUENTA' => '5.2.29.01.14 - Dotacion Empleados',
+    ),
+    212 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2584',
+      'CUENTA' => '5.2.29.01.33 - Donaciones, Asistencia Social',
+    ),
+    213 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2585',
+      'CUENTA' => '5.2.29.01.34 - Materiales y herramientas',
+    ),
+    214 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2589',
+      'CUENTA' => '5.2.31.01.01 - Suministros Didácticos',
+    ),
+    215 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2590',
+      'CUENTA' => '5.2.31.01.02 - Actividades Recreativas, Culturales y Deportivas',
+    ),
+    216 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2591',
+      'CUENTA' => '5.2.31.01.04 - Material de Laboratorio',
+    ),
+    217 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2592',
+      'CUENTA' => '5.2.31.01.20 - Suministros de Oficina',
+    ),
+    218 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2596',
+      'CUENTA' => '5.4.01.01.01 - Provisiones medidas a VNR',
+    ),
+    219 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2597',
+      'CUENTA' => '5.4.01.01.02 - Provisiones de Empleados',
+    ),
+    220 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2598',
+      'CUENTA' => '5.4.01.01.03 - Provisiones de Contingentes',
+    ),
+    221 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2599',
+      'CUENTA' => '5.4.01.01.04 - Provisiones de Mediciones',
+    ),
+    222 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2603',
+      'CUENTA' => '5.5.01.01.01 - Gastos Bancarios',
+    ),
+    223 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2604',
+      'CUENTA' => '5.5.01.01.02 - Comisiones',
+    ),
+    224 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2605',
+      'CUENTA' => '5.5.01.01.04 - Diferencia en Cambio',
+    ),
+    225 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2608',
+      'CUENTA' => '5.5.03.01.03 - Pérdida de Dinero',
+    ),
+    226 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2611',
+      'CUENTA' => '5.5.05.01.02 - Impuestos Asumidos',
+    ),
+    227 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2612',
+      'CUENTA' => '5.5.05.01.03 - Multas Sanciones y Litigios',
+    ),
+    228 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2613',
+      'CUENTA' => '5.5.05.01.04 - Faltantes en Caja',
+    ),
+    229 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2614',
+      'CUENTA' => '5.5.05.01.05 - Costos y Gastos de Ejercicios Anteriores',
+    ),
+    230 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2615',
+      'CUENTA' => '5.5.05.01.06 - IVA que se carga al gasto',
+    ),
+    231 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2619',
+      'CUENTA' => '5.9.01.01.01 - Asignación de Fraternidad',
+    ),
+    232 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2620',
+      'CUENTA' => '5.9.01.01.02 - Asignación de Obra a Provincia',
+    ),
+    233 => 
+    array (
+      'ID_PLAN_DE_CUENTA' => '2621',
+      'CUENTA' => '5.9.03.01.05 - Jubilacion Patronal-Provincia',
+    ),
+  ),
+)
+2022/01/19 19:00:26:  Insert Update Proveedor 
+2022/01/19 19:00:26:  DATOS DE ENTRADA
+2022/01/19 19:00:26:  Datos: array (
+  'tipo_identificacion' => '04',
+  'identificacion' => '1712873890',
+  'nombre' => 'IVAN JAVIER GONZALEZ PLACENCIA',
+  'provincia' => 'IMBABURA',
+  'ciudad' => 'IBARRA',
+  'direccion' => 'HERNAN GONZALEZ DE SAA 24145',
+  'telefono' => '0979375063',
+  'email' => 'ivan_gonza@hotmail.com',
+)
+2022/01/19 19:26:33:  Insert Update Proveedor 
+2022/01/19 19:26:33:  DATOS DE ENTRADA
+2022/01/19 19:26:33:  Datos: array (
+  'TIPOID' => 'Ruc',
+  'NUMEROIDENT' => '1712873890',
+  'NOMBRE' => 'IVAN JAVIER GONZALEZ PLACENCIA',
+  'DIRECCION' => 'Ibarra',
+  'TELEFONO' => '0992780732',
+  'DOCUMENTO' => 'Factura',
+  'AUTORIZACION' => '1234567890',
+  'SERIE' => '001002',
+  'RANGO_DESDE' => '1',
+  'RANGO_HASTA' => '567',
+  'CADUCA' => '20221231',
+  'PORCENTAJE_IMPUESTO_RETENCION_IVA' => '70',
+  'email' => 'pp@hotmail.com',
+  'SOCIO' => 'False',
+)
+2022/01/19 19:26:33:  Consulta: SELECT count(*) as count
+                     FROM  PROVEEDORES
+                     WHERE NUMEROIDENT='1712873890'
+                     AND COD_EMPRESA=4;
+2022/01/19 19:26:33:  Registrar Proveedor
+2022/01/19 19:26:33:  DATOS DE ENTRADA
+2022/01/19 19:26:33:  Datos: array (
+  'TIPOID' => 'Ruc',
+  'NUMEROIDENT' => '1712873890',
+  'NOMBRE' => 'IVAN JAVIER GONZALEZ PLACENCIA',
+  'DIRECCION' => 'Ibarra',
+  'TELEFONO' => '0992780732',
+  'DOCUMENTO' => 'Factura',
+  'AUTORIZACION' => '1234567890',
+  'SERIE' => '001002',
+  'RANGO_DESDE' => '1',
+  'RANGO_HASTA' => '567',
+  'CADUCA' => '20221231',
+  'PORCENTAJE_IMPUESTO_RETENCION_IVA' => '70',
+  'email' => 'pp@hotmail.com',
+  'SOCIO' => 'False',
+)
+2022/01/19 19:26:33:  Consulta: INSERT INTO PROVEEDORES(
+                            NUMEROIDENT, 
+                            COD_EMPRESA, 
+                            NOMBRE, 
+                            TIPOID, 
+                            DIRECCION, 
+                            TELEFONO, 
+                            DOCUMENTO, 
+                            AUTORIZACION, 
+                            SERIE, 
+                            RANGO_DESDE, 
+                            RANGO_HASTA, 
+                            CADUCA, 
+                            PORCENTAJE_IMPUESTO_RETENCION_IVA, 
+                            email, 
+                            SOCIO
+                            )
+                     VALUES(
+                        '1712873890', 
+                        4, 
+                        'IVAN JAVIER GONZALEZ PLACENCIA',
+                        'Ruc',
+                        'Ibarra',
+                        '0992780732',
+                        'Factura',
+                        '1234567890',
+                        '001002',
+                        '1',
+                        '567',
+                        '20221231',
+                        '70',
+                        'pp@hotmail.com',
+                        'False');
+2022/01/19 19:26:33:  Respuesta: array (
+  'error' => '0',
+  'mensaje' => 'ok',
+  'datos' => 
+  array (
+    'IDCEDULARUC' => '2216',
+    'NUMEROIDENT' => '1712873890',
+    'NOMBRE' => 'IVAN JAVIER GONZALEZ PLACENCIA',
+  ),
+)
+2022/01/19 19:26:33:  Respuesta: array (
+  'error' => '0',
+  'mensaje' => 'ok',
+  'datos' => 
+  array (
+    'IDCEDULARUC' => '2216',
+    'NUMEROIDENT' => '1712873890',
+    'NOMBRE' => 'IVAN JAVIER GONZALEZ PLACENCIA',
+  ),
+)
+2022/01/19 19:26:57:  Insert Update Proveedor 
+2022/01/19 19:26:57:  DATOS DE ENTRADA
+2022/01/19 19:26:57:  Datos: array (
+  'TIPOID' => 'Ruc',
+  'NUMEROIDENT' => '1712873890',
+  'NOMBRE' => 'IVAN JAVIER GONZALEZ PLACENCIA',
+  'DIRECCION' => 'Ibarra1',
+  'TELEFONO' => '0992780732',
+  'DOCUMENTO' => 'Factura',
+  'AUTORIZACION' => '1234567890',
+  'SERIE' => '001002',
+  'RANGO_DESDE' => '1',
+  'RANGO_HASTA' => '567',
+  'CADUCA' => '20221231',
+  'PORCENTAJE_IMPUESTO_RETENCION_IVA' => '70',
+  'email' => 'pp@hotmail.com',
+  'SOCIO' => 'False',
+)
+2022/01/19 19:26:57:  Consulta: SELECT count(*) as count
+                     FROM  PROVEEDORES
+                     WHERE NUMEROIDENT='1712873890'
+                     AND COD_EMPRESA=4;
+2022/01/19 19:26:57:  Actualizar Proveedor
+2022/01/19 19:26:57:  DATOS DE ENTRADA
+2022/01/19 19:26:57:  Datos: array (
+  'TIPOID' => 'Ruc',
+  'NUMEROIDENT' => '1712873890',
+  'NOMBRE' => 'IVAN JAVIER GONZALEZ PLACENCIA',
+  'DIRECCION' => 'Ibarra1',
+  'TELEFONO' => '0992780732',
+  'DOCUMENTO' => 'Factura',
+  'AUTORIZACION' => '1234567890',
+  'SERIE' => '001002',
+  'RANGO_DESDE' => '1',
+  'RANGO_HASTA' => '567',
+  'CADUCA' => '20221231',
+  'PORCENTAJE_IMPUESTO_RETENCION_IVA' => '70',
+  'email' => 'pp@hotmail.com',
+  'SOCIO' => 'False',
+)
+2022/01/19 19:26:57:  Consulta: UPDATE PROVEEDORES SET 
+                        TIPOID='Ruc',
+                        NOMBRE='IVAN JAVIER GONZALEZ PLACENCIA',
+                        DIRECCION='Ibarra1',
+                        TELEFONO='0992780732',
+                        email='pp@hotmail.com'
+                    WHERE COD_EMPRESA=4
+                    AND NUMEROIDENT='1712873890';
+2022/01/19 19:26:58:  LISTA 
+2022/01/19 19:26:58:  DATOS DE ENTRADA
+2022/01/19 19:26:58:  Consulta:   SELECT      IDCEDULARUC, 
+                                    NUMEROIDENT, 
+                                    NOMBRE
+                        FROM        PROVEEDORES
+                        WHERE      COD_EMPRESA = 4 
+                        AND        NUMEROIDENT LIKE '1712873890%';
+2022/01/19 19:26:58:  Respuesta: array (
+  'error' => '0',
+  'mensaje' => 'ok',
+  'datos' => 
+  array (
+    'IDCEDULARUC' => '2215',
+    'NUMEROIDENT' => '1712873890001',
+    'NOMBRE' => 'IVAN GONZALEZ',
+  ),
+)
+2022/01/19 19:26:57:  Respuesta: array (
+  'error' => '0',
+  'mensaje' => 'ok',
+  'datos' => 
+  array (
+    'IDCEDULARUC' => '2215',
+    'NUMEROIDENT' => '1712873890001',
+    'NOMBRE' => 'IVAN GONZALEZ',
+  ),
+)
+2022/01/19 19:26:57:  Respuesta: array (
+  'error' => '0',
+  'mensaje' => 'ok',
+  'datos' => 
+  array (
+    'IDCEDULARUC' => '2215',
+    'NUMEROIDENT' => '1712873890001',
+    'NOMBRE' => 'IVAN GONZALEZ',
+  ),
+)
+

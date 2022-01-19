@@ -1,0 +1,1150 @@
+2021/12/07 19:23:03:  REGISTRAR NuevaVenta 
+
+2021/12/07 19:23:03:  DATOS DE ENTRADA
+
+2021/12/07 19:23:03:  DATOS :array (
+  'empresa' => '4',
+  'tipo_documento' => '01',
+  'tipo_emision' => 'E',
+  'fecha' => '20211201',
+  'fecha_caducidad' => '20211201',
+  'serie' => '001100',
+  'secuencial' => '000000001',
+  'autorizacion' => '12345678899',
+  'estado_sri' => 'AUTORIZADO',
+  'observaciones' => 'NINGUNA',
+  'id_tesoreria' => '12',
+  'plazo' => '1',
+  'tiempo' => 'DIAS',
+  'servicio' => '5.00',
+  'cliente' => 
+  array (
+    'tipo_identificacion' => '04',
+    'identificacion' => '1712873890',
+    'nombre' => 'IVAN GONZALEZ',
+    'provincia' => 'IMBABURA',
+    'ciudad' => 'IBARRA',
+    'direccion' => 'HERNAN GONZALEZ DE SAA 24145 Y CORY CORY',
+    'telefono' => '0979375063',
+    'email' => 'ivan_gonza@hotmail.com',
+  ),
+  'productos' => 
+  array (
+    0 => 
+    array (
+      'cod_producto_debi' => '38',
+      'cantidad' => '1',
+      'pvp' => '5.5',
+      'descuento_total' => '0',
+      'porcentaje_iva' => '12',
+    ),
+    1 => 
+    array (
+      'cod_producto_debi' => '37',
+      'cantidad' => '2',
+      'pvp' => '10.00',
+      'descuento_total' => '1.00',
+      'porcentaje_iva' => '0',
+    ),
+  ),
+)
+
+2021/12/07 19:23:03:  Insert Update Cliente 
+
+2021/12/07 19:23:03:  DATOS DE ENTRADA
+
+2021/12/07 19:23:03:  Datos: array (
+  'tipo_identificacion' => '04',
+  'identificacion' => '1712873890',
+  'nombre' => 'IVAN GONZALEZ',
+  'provincia' => 'IMBABURA',
+  'ciudad' => 'IBARRA',
+  'direccion' => 'HERNAN GONZALEZ DE SAA 24145 Y CORY CORY',
+  'telefono' => '0979375063',
+  'email' => 'ivan_gonza@hotmail.com',
+)
+
+2021/12/07 19:23:03:  Consulta: SELECT count(*) as count
+                     FROM  CLIENTES
+                     WHERE RUC='1712873890'
+                     AND COD_EMPRESA=4;
+
+2021/12/07 19:23:03:  Actualizar Cliente
+
+2021/12/07 19:23:03:  DATOS DE ENTRADA
+
+2021/12/07 19:23:03:  Datos: array (
+  'tipo_identificacion' => '04',
+  'identificacion' => '1712873890',
+  'nombre' => 'IVAN GONZALEZ',
+  'provincia' => 'IMBABURA',
+  'ciudad' => 'IBARRA',
+  'direccion' => 'HERNAN GONZALEZ DE SAA 24145 Y CORY CORY',
+  'telefono' => '0979375063',
+  'email' => 'ivan_gonza@hotmail.com',
+)
+
+2021/12/07 19:23:03:  Consulta: UPDATE CLIENTES SET 
+                        tipo_identificacion='04',
+                        NOMBRE='IVAN GONZALEZ',
+                        PROVINCIA='IMBABURA',
+                        CIUDAD='IBARRA',
+                        DIRECCION='HERNAN GONZALEZ DE SAA 24145 Y CORY CORY',
+                        TELEFONO='0979375063',
+                        EMAIL='ivan_gonza@hotmail.com'
+                    WHERE COD_EMPRESA=4
+                    AND RUC='1712873890';
+
+2021/12/07 19:23:03:  LISTA 
+
+2021/12/07 19:23:03:  DATOS DE ENTRADA
+
+2021/12/07 19:23:03:  Consulta: SELECT        COD_CLIENTE, 
+                                   RUC, 
+                                   NOMBRE
+                        FROM       CLIENTES
+                        WHERE      COD_EMPRESA = 4 
+                        AND        RUC LIKE '1712873890%';
+
+2021/12/07 19:23:03:  Respuesta: array (
+  'error' => '0',
+  'mensaje' => 'ok',
+  'datos' => 
+  array (
+    'cod_cliente' => '3436',
+    'ruc' => '1712873890001',
+    'nombre' => 'IVAN JAVIER GONZALEZ PLACENCIA',
+  ),
+)
+
+2021/12/07 19:23:03:  Respuesta: array (
+  'error' => '0',
+  'mensaje' => 'ok',
+  'datos' => 
+  array (
+    'cod_cliente' => '3436',
+    'ruc' => '1712873890001',
+    'nombre' => 'IVAN JAVIER GONZALEZ PLACENCIA',
+  ),
+)
+
+2021/12/07 19:23:03:  Respuesta: array (
+  'error' => '0',
+  'mensaje' => 'ok',
+  'datos' => 
+  array (
+    'cod_cliente' => '3436',
+    'ruc' => '1712873890001',
+    'nombre' => 'IVAN JAVIER GONZALEZ PLACENCIA',
+  ),
+)
+
+2021/12/07 19:23:03:  Registrar Venta 
+
+2021/12/07 19:23:03:  DATOS DE ENTRADA
+
+2021/12/07 19:23:03:  Datos: array (
+  'empresa' => '4',
+  'cod_cliente' => '3436',
+  'tipo_documento' => '01',
+  'tipo_emision' => 'E',
+  'fecha' => '20211201',
+  'fecha_caducidad' => '20211201',
+  'serie' => '001100',
+  'secuencial' => '000000001',
+  'autorizacion' => '12345678899',
+  'estado_sri' => 'AUTORIZADO',
+  'observaciones' => 'NINGUNA',
+  'firmado' => 'true',
+  'envio_correo' => 'true',
+  'id_tesoreria' => '12',
+  'plazo' => '1',
+  'tiempo' => 'DIAS',
+  'servicio' => '5.00',
+)
+
+2021/12/07 19:23:03:  Consulta: INSERT INTO FACTURA_VENTA (
+                        COD_EMPRESA,
+                        COD_CLIENTE,
+                        TIPO_DOCUMENTO,
+                        TIPOEMISION,
+                        FECHA_VENTA,
+                        FECHA_CADUCIDAD,
+                        SERIE,
+                        NUMERO_FACTURA,
+                        AUTORIZACION,
+                        AUTORIZACION_SRI,
+                        OBSERVACIONES,
+                        FIRMADO,
+                        envio_correo,
+                        SUBTOTAL,
+                        DESCUENTO,
+                        ICE,
+                        BASEIVACERO,
+                        BASEIVADOCE,
+                        IVA,
+                        TOTAL,
+                        IDTESORERIA,
+                        PLAZO,
+                        TIEMPO, 
+                        ESTADO,
+                        RETUVIERON,
+                        ACTIVOFIJO,
+                        TOTALRETENIDO,
+                        DIEZPORSERVICIOS,
+                        NOGRABA
+                     ) VALUES (
+                         4,
+                         3436,
+                        '01',
+                        'E',
+                        '20211201',
+                        '20211201',
+                        '001100',
+                        '000000001',
+                        '12345678899',
+                        'AUTORIZADO',
+                        'NINGUNA',
+                        'true',
+                        'true',
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                         12,
+                         1,
+                        'DIAS', 
+                        'A',
+                        'NO',
+                        'NO',
+                        0,
+                        5.00,
+                        'False'
+                     )
+
+2021/12/07 19:23:03:  Respuesta: array (
+  'error' => '0',
+  'mensaje' => 'ok',
+  'datos' => 
+  array (
+    'id_factura' => '42857',
+  ),
+)
+
+2021/12/07 19:23:03:  Registrar Detalle Venta 
+
+2021/12/07 19:23:03:  DATOS DE ENTRADA
+
+2021/12/07 19:23:03:  Datos: array (
+  'id_factura' => '42857',
+  'cod_producto_debi' => '38',
+  'cantidad' => '1',
+  'pvp' => '5.5',
+  'descuento' => '0',
+  'subtotal' => 5.5,
+  'ice' => 0,
+  'base_cero' => 0,
+  'base_doce' => 5.5,
+  'iva' => 0.66,
+  'total' => 6.16,
+)
+
+2021/12/07 19:23:03:  Consulta: INSERT INTO detalle_factura_venta (
+                            ID_FACTURA_VENTA,
+                            ID_GRUPOS_PRODUCTOS_VENTAS,
+                            ID_IMPUESTO,
+                            CANTIDAD,
+                            PVP,
+                            DESCUENTO,
+                            SUBTOTAL,
+                            POR_ICE,
+                            ICE,
+                            BASE_IMPONIBLE_CERO,
+                            BASE_IMPONIBLE_DOCE,
+                            PORCENTAJE_IVA,
+                            IVA,
+                            TOTAL,
+                            CUENTA,
+                            COD_PRINCIPAL,
+                            COD_AUXILIAR,
+                            detalle,
+                            CODIGO_PROD,
+                            IVA_POR 
+                            ) 
+                    SELECT 
+                            42857,
+                            ID_GRUPOS_PRODUCTOS_VENTAS,
+                            ID_IMPUESTO,
+                            1,
+                            5.5,
+                            0,
+                            5.5,
+                            POR_ICE,
+                            0,
+                            0, 
+                            5.5,
+                            IVA ,
+                            0.66,
+                            6.16,
+                            CUENTA ,
+                            COD_PRINCIPAL,
+                            COD_AUXILIAR,
+                            '',
+                            NULL ,
+                            '' 
+                        FROM GRUPO_PRODUCTO_VENTA
+                        WHERE ID_GRUPOS_PRODUCTOS_VENTAS=38;
+
+2021/12/07 19:23:03:  Respuesta: array (
+  'error' => '9997',
+  'mensaje' => 
+  array (
+    0 => 
+    array (
+      0 => '23000',
+      'SQLSTATE' => '23000',
+      1 => 547,
+      'code' => 547,
+      2 => '[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Instrucci�n INSERT en conflicto con la restricci�n FOREIGN KEY "FK_DETALLE__REF_84235_PRODUCTO". El conflicto ha aparecido en la base de datos "oviedo", tabla "dbo.PRODUCTOS_DEBI", column \'CODIGO_PROD\'.',
+      'message' => '[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Instrucci�n INSERT en conflicto con la restricci�n FOREIGN KEY "FK_DETALLE__REF_84235_PRODUCTO". El conflicto ha aparecido en la base de datos "oviedo", tabla "dbo.PRODUCTOS_DEBI", column \'CODIGO_PROD\'.',
+    ),
+    1 => 
+    array (
+      0 => '01000',
+      'SQLSTATE' => '01000',
+      1 => 3621,
+      'code' => 3621,
+      2 => '[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Se termin� la instrucci�n.',
+      'message' => '[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Se termin� la instrucci�n.',
+    ),
+  ),
+)
+
+2021/12/07 19:28:12:  REGISTRAR NuevaVenta 
+2021/12/07 19:28:12:  DATOS DE ENTRADA
+2021/12/07 19:28:12:  DATOS :array (
+  'empresa' => '4',
+  'tipo_documento' => '01',
+  'tipo_emision' => 'E',
+  'fecha' => '20211201',
+  'fecha_caducidad' => '20211201',
+  'serie' => '001100',
+  'secuencial' => '000000001',
+  'autorizacion' => '12345678899',
+  'estado_sri' => 'AUTORIZADO',
+  'observaciones' => 'NINGUNA',
+  'id_tesoreria' => '12',
+  'plazo' => '1',
+  'tiempo' => 'DIAS',
+  'servicio' => '5.00',
+  'cliente' => 
+  array (
+    'tipo_identificacion' => '04',
+    'identificacion' => '1712873890',
+    'nombre' => 'IVAN GONZALEZ',
+    'provincia' => 'IMBABURA',
+    'ciudad' => 'IBARRA',
+    'direccion' => 'HERNAN GONZALEZ DE SAA 24145 Y CORY CORY',
+    'telefono' => '0979375063',
+    'email' => 'ivan_gonza@hotmail.com',
+  ),
+  'productos' => 
+  array (
+    0 => 
+    array (
+      'cod_producto_debi' => '38',
+      'cantidad' => '1',
+      'pvp' => '5.5',
+      'descuento_total' => '0',
+      'porcentaje_iva' => '12',
+    ),
+    1 => 
+    array (
+      'cod_producto_debi' => '37',
+      'cantidad' => '2',
+      'pvp' => '10.00',
+      'descuento_total' => '1.00',
+      'porcentaje_iva' => '0',
+    ),
+  ),
+)
+2021/12/07 19:28:12:  Insert Update Cliente 
+2021/12/07 19:28:12:  DATOS DE ENTRADA
+2021/12/07 19:28:12:  Datos: array (
+  'tipo_identificacion' => '04',
+  'identificacion' => '1712873890',
+  'nombre' => 'IVAN GONZALEZ',
+  'provincia' => 'IMBABURA',
+  'ciudad' => 'IBARRA',
+  'direccion' => 'HERNAN GONZALEZ DE SAA 24145 Y CORY CORY',
+  'telefono' => '0979375063',
+  'email' => 'ivan_gonza@hotmail.com',
+)
+2021/12/07 19:28:12:  Consulta: SELECT count(*) as count
+                     FROM  CLIENTES
+                     WHERE RUC='1712873890'
+                     AND COD_EMPRESA=4;
+2021/12/07 19:28:12:  Actualizar Cliente
+2021/12/07 19:28:12:  DATOS DE ENTRADA
+2021/12/07 19:28:12:  Datos: array (
+  'tipo_identificacion' => '04',
+  'identificacion' => '1712873890',
+  'nombre' => 'IVAN GONZALEZ',
+  'provincia' => 'IMBABURA',
+  'ciudad' => 'IBARRA',
+  'direccion' => 'HERNAN GONZALEZ DE SAA 24145 Y CORY CORY',
+  'telefono' => '0979375063',
+  'email' => 'ivan_gonza@hotmail.com',
+)
+2021/12/07 19:28:12:  Consulta: UPDATE CLIENTES SET 
+                        tipo_identificacion='04',
+                        NOMBRE='IVAN GONZALEZ',
+                        PROVINCIA='IMBABURA',
+                        CIUDAD='IBARRA',
+                        DIRECCION='HERNAN GONZALEZ DE SAA 24145 Y CORY CORY',
+                        TELEFONO='0979375063',
+                        EMAIL='ivan_gonza@hotmail.com'
+                    WHERE COD_EMPRESA=4
+                    AND RUC='1712873890';
+2021/12/07 19:28:12:  LISTA 
+2021/12/07 19:28:12:  DATOS DE ENTRADA
+2021/12/07 19:28:12:  Consulta: SELECT        COD_CLIENTE, 
+                                   RUC, 
+                                   NOMBRE
+                        FROM       CLIENTES
+                        WHERE      COD_EMPRESA = 4 
+                        AND        RUC LIKE '1712873890%';
+2021/12/07 19:28:12:  Respuesta: array (
+  'error' => '0',
+  'mensaje' => 'ok',
+  'datos' => 
+  array (
+    'cod_cliente' => '3436',
+    'ruc' => '1712873890001',
+    'nombre' => 'IVAN JAVIER GONZALEZ PLACENCIA',
+  ),
+)
+2021/12/07 19:28:12:  Respuesta: array (
+  'error' => '0',
+  'mensaje' => 'ok',
+  'datos' => 
+  array (
+    'cod_cliente' => '3436',
+    'ruc' => '1712873890001',
+    'nombre' => 'IVAN JAVIER GONZALEZ PLACENCIA',
+  ),
+)
+2021/12/07 19:28:12:  Respuesta: array (
+  'error' => '0',
+  'mensaje' => 'ok',
+  'datos' => 
+  array (
+    'cod_cliente' => '3436',
+    'ruc' => '1712873890001',
+    'nombre' => 'IVAN JAVIER GONZALEZ PLACENCIA',
+  ),
+)
+2021/12/07 19:28:12:  Registrar Venta 
+2021/12/07 19:28:12:  DATOS DE ENTRADA
+2021/12/07 19:28:12:  Datos: array (
+  'empresa' => '4',
+  'cod_cliente' => '3436',
+  'tipo_documento' => '01',
+  'tipo_emision' => 'E',
+  'fecha' => '20211201',
+  'fecha_caducidad' => '20211201',
+  'serie' => '001100',
+  'secuencial' => '000000001',
+  'autorizacion' => '12345678899',
+  'estado_sri' => 'AUTORIZADO',
+  'observaciones' => 'NINGUNA',
+  'firmado' => 'true',
+  'envio_correo' => 'true',
+  'id_tesoreria' => '12',
+  'plazo' => '1',
+  'tiempo' => 'DIAS',
+  'servicio' => '5.00',
+)
+2021/12/07 19:28:12:  Consulta: INSERT INTO FACTURA_VENTA (
+                        COD_EMPRESA,
+                        COD_CLIENTE,
+                        TIPO_DOCUMENTO,
+                        TIPOEMISION,
+                        FECHA_VENTA,
+                        FECHA_CADUCIDAD,
+                        SERIE,
+                        NUMERO_FACTURA,
+                        AUTORIZACION,
+                        AUTORIZACION_SRI,
+                        OBSERVACIONES,
+                        FIRMADO,
+                        envio_correo,
+                        SUBTOTAL,
+                        DESCUENTO,
+                        ICE,
+                        BASEIVACERO,
+                        BASEIVADOCE,
+                        IVA,
+                        TOTAL,
+                        IDTESORERIA,
+                        PLAZO,
+                        TIEMPO, 
+                        ESTADO,
+                        RETUVIERON,
+                        ACTIVOFIJO,
+                        TOTALRETENIDO,
+                        DIEZPORSERVICIOS,
+                        NOGRABA
+                     ) VALUES (
+                         4,
+                         3436,
+                        '01',
+                        'E',
+                        '20211201',
+                        '20211201',
+                        '001100',
+                        '000000001',
+                        '12345678899',
+                        'AUTORIZADO',
+                        'NINGUNA',
+                        'true',
+                        'true',
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                         12,
+                         1,
+                        'DIAS', 
+                        'A',
+                        'NO',
+                        'NO',
+                        0,
+                        5.00,
+                        'False'
+                     )
+2021/12/07 19:28:12:  Respuesta: array (
+  'error' => '0',
+  'mensaje' => 'ok',
+  'datos' => 
+  array (
+    'id_factura' => '42858',
+  ),
+)
+2021/12/07 19:28:12:  Registrar Detalle Venta 
+2021/12/07 19:28:12:  DATOS DE ENTRADA
+2021/12/07 19:28:12:  Datos: array (
+  'id_factura' => '42858',
+  'cod_producto_debi' => '38',
+  'cantidad' => '1',
+  'pvp' => '5.5',
+  'descuento' => '0',
+  'subtotal' => 5.5,
+  'ice' => 0,
+  'base_cero' => 0,
+  'base_doce' => 5.5,
+  'iva' => 0.66,
+  'total' => 6.16,
+)
+2021/12/07 19:28:12:  Consulta: INSERT INTO detalle_factura_venta (
+                            ID_FACTURA_VENTA,
+                            ID_GRUPOS_PRODUCTOS_VENTAS,
+                            ID_IMPUESTO,
+                            CANTIDAD,
+                            PVP,
+                            DESCUENTO,
+                            SUBTOTAL,
+                            POR_ICE,
+                            ICE,
+                            BASE_IMPONIBLE_CERO,
+                            BASE_IMPONIBLE_DOCE,
+                            PORCENTAJE_IVA,
+                            IVA,
+                            TOTAL,
+                            CUENTA,
+                            COD_PRINCIPAL,
+                            COD_AUXILIAR,
+                            detalle,
+                            CODIGO_PROD,
+                            IVA_POR 
+                            ) 
+                    SELECT 
+                            42858,
+                            ID_GRUPOS_PRODUCTOS_VENTAS,
+                            ID_IMPUESTO,
+                            1,
+                            5.5,
+                            0,
+                            5.5,
+                            POR_ICE,
+                            0,
+                            0, 
+                            5.5,
+                            IVA ,
+                            0.66,
+                            6.16,
+                            CUENTA ,
+                            COD_PRINCIPAL,
+                            COD_AUXILIAR,
+                            '',
+                            NULL ,
+                            '' 
+                        FROM GRUPO_PRODUCTO_VENTA
+                        WHERE ID_GRUPOS_PRODUCTOS_VENTAS=38;
+2021/12/07 19:28:12:  Respuesta: array (
+  'error' => '0',
+  'mensaje' => 'Detalle Registrado',
+  'datos' => 
+  array (
+    'id_factura' => '42858',
+    'cod_producto_debi' => '38',
+    'cantidad' => '1',
+    'pvp' => '5.5',
+    'descuento' => '0',
+    'subtotal' => 5.5,
+    'ice' => 0,
+    'base_cero' => 0,
+    'base_doce' => 5.5,
+    'iva' => 0.66,
+    'total' => 6.16,
+  ),
+)
+2021/12/07 19:28:12:  Registrar Detalle Venta 
+2021/12/07 19:28:12:  DATOS DE ENTRADA
+2021/12/07 19:28:12:  Datos: array (
+  'id_factura' => '42858',
+  'cod_producto_debi' => '37',
+  'cantidad' => '2',
+  'pvp' => '10.00',
+  'descuento' => '1.00',
+  'subtotal' => 20.0,
+  'ice' => 0,
+  'base_cero' => 19.0,
+  'base_doce' => 0,
+  'iva' => 0,
+  'total' => 19.0,
+)
+2021/12/07 19:28:12:  Consulta: INSERT INTO detalle_factura_venta (
+                            ID_FACTURA_VENTA,
+                            ID_GRUPOS_PRODUCTOS_VENTAS,
+                            ID_IMPUESTO,
+                            CANTIDAD,
+                            PVP,
+                            DESCUENTO,
+                            SUBTOTAL,
+                            POR_ICE,
+                            ICE,
+                            BASE_IMPONIBLE_CERO,
+                            BASE_IMPONIBLE_DOCE,
+                            PORCENTAJE_IVA,
+                            IVA,
+                            TOTAL,
+                            CUENTA,
+                            COD_PRINCIPAL,
+                            COD_AUXILIAR,
+                            detalle,
+                            CODIGO_PROD,
+                            IVA_POR 
+                            ) 
+                    SELECT 
+                            42858,
+                            ID_GRUPOS_PRODUCTOS_VENTAS,
+                            ID_IMPUESTO,
+                            2,
+                            10.00,
+                            1.00,
+                            20,
+                            POR_ICE,
+                            0,
+                            19, 
+                            0,
+                            IVA ,
+                            0,
+                            19,
+                            CUENTA ,
+                            COD_PRINCIPAL,
+                            COD_AUXILIAR,
+                            '',
+                            NULL ,
+                            '' 
+                        FROM GRUPO_PRODUCTO_VENTA
+                        WHERE ID_GRUPOS_PRODUCTOS_VENTAS=37;
+2021/12/07 19:28:12:  Respuesta: array (
+  'error' => '0',
+  'mensaje' => 'Detalle Registrado',
+  'datos' => 
+  array (
+    'id_factura' => '42858',
+    'cod_producto_debi' => '37',
+    'cantidad' => '2',
+    'pvp' => '10.00',
+    'descuento' => '1.00',
+    'subtotal' => 20.0,
+    'ice' => 0,
+    'base_cero' => 19.0,
+    'base_doce' => 0,
+    'iva' => 0,
+    'total' => 19.0,
+  ),
+)
+2021/12/07 19:28:12:  Registrar Detalle Venta 
+2021/12/07 19:28:12:  DATOS DE ENTRADA
+2021/12/07 19:28:12:  Datos: '42858'
+2021/12/07 19:28:12:  Consulta: UPDATE FACTURA_VENTA  
+                        SET	 
+                            SUBTOTAL = T.SUBTOTAL ,
+                            DESCUENTO= T.DESCUENTO,
+                            ICE= T.ICE,
+                            BASEIVACERO= T.BASE_IMPONIBLE_CERO,
+                            BASEIVADOCE= T.BASE_IMPONIBLE_DOCE,
+                            IVA= T.IVA,
+                            TOTAL= T.TOTAL + DIEZPORSERVICIOS
+                        FROM V_TOTALES_FACTURA_VENTA T
+                        WHERE FACTURA_VENTA.ID_FACTURA_VENTA = T.ID_FACTURA_VENTA
+                        AND FACTURA_VENTA.ID_FACTURA_VENTA=42858;
+2021/12/07 19:28:12:  Respuesta: array (
+  'error' => '0',
+  'mensaje' => 'Saldos Actualizados',
+  'datos' => '42858',
+)
+2021/12/07 19:28:12:  generarAsientoFacrura 
+2021/12/07 19:28:12:  DATOS DE ENTRADA
+2021/12/07 19:28:12:  Datos: '42858'
+2021/12/07 19:28:12:  Consulta: execute sp_genera_asiento_factura 42858
+2021/12/07 19:28:12:  Consulta: SELECT ID_ASIENTO FROM FACTURA_VENTA WHERE ID_FACTURA_VENTA=42858
+2021/12/07 19:28:12:  Respuesta: array (
+  'error' => '0',
+  'mensaje' => 'Saldos Actualizados',
+  'datos' => 
+  array (
+    'id_asiento' => 'I42112000003',
+  ),
+)
+2021/12/07 19:28:12:  Respuesta: array (
+  'error' => '0',
+  'mensaje' => 'Factura Registrado',
+  'datos' => 
+  array (
+    'id_factura' => '42858',
+    'id_asiento' => 'I42112000003',
+  ),
+)
+2021/12/07 19:36:18:  REGISTRAR NuevaVenta 
+2021/12/07 19:36:18:  DATOS DE ENTRADA
+2021/12/07 19:36:18:  DATOS :array (
+  'empresa' => '4',
+  'tipo_documento' => '01',
+  'tipo_emision' => 'E',
+  'fecha' => '20211201',
+  'fecha_caducidad' => '20211201',
+  'serie' => '001100',
+  'secuencial' => '000000002',
+  'autorizacion' => '12345678899',
+  'estado_sri' => 'AUTORIZADO',
+  'observaciones' => 'NINGUNA',
+  'id_tesoreria' => '12',
+  'plazo' => '1',
+  'tiempo' => 'DIAS',
+  'servicio' => '5.00',
+  'cliente' => 
+  array (
+    'tipo_identificacion' => '04',
+    'identificacion' => '1712873890',
+    'nombre' => 'IVAN GONZALEZ',
+    'provincia' => 'IMBABURA',
+    'ciudad' => 'IBARRA',
+    'direccion' => 'HERNAN GONZALEZ DE SAA 24145 Y CORY CORY',
+    'telefono' => '0979375063',
+    'email' => 'ivan_gonza@hotmail.com',
+  ),
+  'productos' => 
+  array (
+    0 => 
+    array (
+      'cod_producto_debi' => '38',
+      'cantidad' => '1',
+      'pvp' => '5.5',
+      'descuento_total' => '0',
+      'porcentaje_iva' => '12',
+    ),
+    1 => 
+    array (
+      'cod_producto_debi' => '37',
+      'cantidad' => '2',
+      'pvp' => '10.00',
+      'descuento_total' => '1.00',
+      'porcentaje_iva' => '0',
+    ),
+  ),
+)
+2021/12/07 19:36:18:  Insert Update Cliente 
+2021/12/07 19:36:18:  DATOS DE ENTRADA
+2021/12/07 19:36:18:  Datos: array (
+  'tipo_identificacion' => '04',
+  'identificacion' => '1712873890',
+  'nombre' => 'IVAN GONZALEZ',
+  'provincia' => 'IMBABURA',
+  'ciudad' => 'IBARRA',
+  'direccion' => 'HERNAN GONZALEZ DE SAA 24145 Y CORY CORY',
+  'telefono' => '0979375063',
+  'email' => 'ivan_gonza@hotmail.com',
+)
+2021/12/07 19:36:18:  Consulta: SELECT count(*) as count
+                     FROM  CLIENTES
+                     WHERE RUC='1712873890'
+                     AND COD_EMPRESA=4;
+2021/12/07 19:36:18:  Actualizar Cliente
+2021/12/07 19:36:18:  DATOS DE ENTRADA
+2021/12/07 19:36:18:  Datos: array (
+  'tipo_identificacion' => '04',
+  'identificacion' => '1712873890',
+  'nombre' => 'IVAN GONZALEZ',
+  'provincia' => 'IMBABURA',
+  'ciudad' => 'IBARRA',
+  'direccion' => 'HERNAN GONZALEZ DE SAA 24145 Y CORY CORY',
+  'telefono' => '0979375063',
+  'email' => 'ivan_gonza@hotmail.com',
+)
+2021/12/07 19:36:18:  Consulta: UPDATE CLIENTES SET 
+                        tipo_identificacion='04',
+                        NOMBRE='IVAN GONZALEZ',
+                        PROVINCIA='IMBABURA',
+                        CIUDAD='IBARRA',
+                        DIRECCION='HERNAN GONZALEZ DE SAA 24145 Y CORY CORY',
+                        TELEFONO='0979375063',
+                        EMAIL='ivan_gonza@hotmail.com'
+                    WHERE COD_EMPRESA=4
+                    AND RUC='1712873890';
+2021/12/07 19:36:18:  LISTA 
+2021/12/07 19:36:18:  DATOS DE ENTRADA
+2021/12/07 19:36:18:  Consulta: SELECT        COD_CLIENTE, 
+                                   RUC, 
+                                   NOMBRE
+                        FROM       CLIENTES
+                        WHERE      COD_EMPRESA = 4 
+                        AND        RUC LIKE '1712873890%';
+2021/12/07 19:36:18:  Respuesta: array (
+  'error' => '0',
+  'mensaje' => 'ok',
+  'datos' => 
+  array (
+    'cod_cliente' => '3436',
+    'ruc' => '1712873890001',
+    'nombre' => 'IVAN JAVIER GONZALEZ PLACENCIA',
+  ),
+)
+2021/12/07 19:36:18:  Respuesta: array (
+  'error' => '0',
+  'mensaje' => 'ok',
+  'datos' => 
+  array (
+    'cod_cliente' => '3436',
+    'ruc' => '1712873890001',
+    'nombre' => 'IVAN JAVIER GONZALEZ PLACENCIA',
+  ),
+)
+2021/12/07 19:36:18:  Respuesta: array (
+  'error' => '0',
+  'mensaje' => 'ok',
+  'datos' => 
+  array (
+    'cod_cliente' => '3436',
+    'ruc' => '1712873890001',
+    'nombre' => 'IVAN JAVIER GONZALEZ PLACENCIA',
+  ),
+)
+2021/12/07 19:36:18:  Registrar Venta 
+2021/12/07 19:36:18:  DATOS DE ENTRADA
+2021/12/07 19:36:18:  Datos: array (
+  'empresa' => '4',
+  'cod_cliente' => '3436',
+  'tipo_documento' => '01',
+  'tipo_emision' => 'E',
+  'fecha' => '20211201',
+  'fecha_caducidad' => '20211201',
+  'serie' => '001100',
+  'secuencial' => '000000002',
+  'autorizacion' => '12345678899',
+  'estado_sri' => 'AUTORIZADO',
+  'observaciones' => 'NINGUNA',
+  'firmado' => 'true',
+  'envio_correo' => 'true',
+  'id_tesoreria' => '12',
+  'plazo' => '1',
+  'tiempo' => 'DIAS',
+  'servicio' => '5.00',
+)
+2021/12/07 19:36:18:  Consulta: INSERT INTO FACTURA_VENTA (
+                        COD_EMPRESA,
+                        COD_CLIENTE,
+                        TIPO_DOCUMENTO,
+                        TIPOEMISION,
+                        FECHA_VENTA,
+                        FECHA_CADUCIDAD,
+                        SERIE,
+                        NUMERO_FACTURA,
+                        AUTORIZACION,
+                        AUTORIZACION_SRI,
+                        OBSERVACIONES,
+                        FIRMADO,
+                        envio_correo,
+                        SUBTOTAL,
+                        DESCUENTO,
+                        ICE,
+                        BASEIVACERO,
+                        BASEIVADOCE,
+                        IVA,
+                        TOTAL,
+                        IDTESORERIA,
+                        PLAZO,
+                        TIEMPO, 
+                        ESTADO,
+                        RETUVIERON,
+                        ACTIVOFIJO,
+                        TOTALRETENIDO,
+                        DIEZPORSERVICIOS,
+                        NOGRABA
+                     ) VALUES (
+                         4,
+                         3436,
+                        '01',
+                        'E',
+                        '20211201',
+                        '20211201',
+                        '001100',
+                        '000000002',
+                        '12345678899',
+                        'AUTORIZADO',
+                        'NINGUNA',
+                        'true',
+                        'true',
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                         12,
+                         1,
+                        'DIAS', 
+                        'A',
+                        'NO',
+                        'NO',
+                        0,
+                        5.00,
+                        'False'
+                     )
+2021/12/07 19:36:18:  Respuesta: array (
+  'error' => '0',
+  'mensaje' => 'ok',
+  'datos' => 
+  array (
+    'id_factura' => '42859',
+  ),
+)
+2021/12/07 19:36:18:  Registrar Detalle Venta 
+2021/12/07 19:36:18:  DATOS DE ENTRADA
+2021/12/07 19:36:18:  Datos: array (
+  'id_factura' => '42859',
+  'cod_producto_debi' => '38',
+  'cantidad' => '1',
+  'pvp' => '5.5',
+  'descuento' => '0',
+  'subtotal' => 5.5,
+  'ice' => 0,
+  'base_cero' => 0,
+  'base_doce' => 5.5,
+  'iva' => 0.66,
+  'total' => 6.16,
+)
+2021/12/07 19:36:18:  Consulta: INSERT INTO detalle_factura_venta (
+                            ID_FACTURA_VENTA,
+                            ID_GRUPOS_PRODUCTOS_VENTAS,
+                            ID_IMPUESTO,
+                            CANTIDAD,
+                            PVP,
+                            DESCUENTO,
+                            SUBTOTAL,
+                            POR_ICE,
+                            ICE,
+                            BASE_IMPONIBLE_CERO,
+                            BASE_IMPONIBLE_DOCE,
+                            PORCENTAJE_IVA,
+                            IVA,
+                            TOTAL,
+                            CUENTA,
+                            COD_PRINCIPAL,
+                            COD_AUXILIAR,
+                            detalle,
+                            CODIGO_PROD,
+                            IVA_POR 
+                            ) 
+                    SELECT 
+                            42859,
+                            ID_GRUPOS_PRODUCTOS_VENTAS,
+                            ID_IMPUESTO,
+                            1,
+                            5.5,
+                            0,
+                            5.5,
+                            POR_ICE,
+                            0,
+                            0, 
+                            5.5,
+                            IVA ,
+                            0.66,
+                            6.16,
+                            CUENTA ,
+                            COD_PRINCIPAL,
+                            COD_AUXILIAR,
+                            '',
+                            NULL ,
+                            '' 
+                        FROM GRUPO_PRODUCTO_VENTA
+                        WHERE ID_GRUPOS_PRODUCTOS_VENTAS=38;
+2021/12/07 19:36:18:  Respuesta: array (
+  'error' => '0',
+  'mensaje' => 'Detalle Registrado',
+  'datos' => 
+  array (
+    'id_factura' => '42859',
+    'cod_producto_debi' => '38',
+    'cantidad' => '1',
+    'pvp' => '5.5',
+    'descuento' => '0',
+    'subtotal' => 5.5,
+    'ice' => 0,
+    'base_cero' => 0,
+    'base_doce' => 5.5,
+    'iva' => 0.66,
+    'total' => 6.16,
+  ),
+)
+2021/12/07 19:36:18:  Registrar Detalle Venta 
+2021/12/07 19:36:18:  DATOS DE ENTRADA
+2021/12/07 19:36:18:  Datos: array (
+  'id_factura' => '42859',
+  'cod_producto_debi' => '37',
+  'cantidad' => '2',
+  'pvp' => '10.00',
+  'descuento' => '1.00',
+  'subtotal' => 20.0,
+  'ice' => 0,
+  'base_cero' => 19.0,
+  'base_doce' => 0,
+  'iva' => 0,
+  'total' => 19.0,
+)
+2021/12/07 19:36:18:  Consulta: INSERT INTO detalle_factura_venta (
+                            ID_FACTURA_VENTA,
+                            ID_GRUPOS_PRODUCTOS_VENTAS,
+                            ID_IMPUESTO,
+                            CANTIDAD,
+                            PVP,
+                            DESCUENTO,
+                            SUBTOTAL,
+                            POR_ICE,
+                            ICE,
+                            BASE_IMPONIBLE_CERO,
+                            BASE_IMPONIBLE_DOCE,
+                            PORCENTAJE_IVA,
+                            IVA,
+                            TOTAL,
+                            CUENTA,
+                            COD_PRINCIPAL,
+                            COD_AUXILIAR,
+                            detalle,
+                            CODIGO_PROD,
+                            IVA_POR 
+                            ) 
+                    SELECT 
+                            42859,
+                            ID_GRUPOS_PRODUCTOS_VENTAS,
+                            ID_IMPUESTO,
+                            2,
+                            10.00,
+                            1.00,
+                            20,
+                            POR_ICE,
+                            0,
+                            19, 
+                            0,
+                            IVA ,
+                            0,
+                            19,
+                            CUENTA ,
+                            COD_PRINCIPAL,
+                            COD_AUXILIAR,
+                            '',
+                            NULL ,
+                            '' 
+                        FROM GRUPO_PRODUCTO_VENTA
+                        WHERE ID_GRUPOS_PRODUCTOS_VENTAS=37;
+2021/12/07 19:36:18:  Respuesta: array (
+  'error' => '0',
+  'mensaje' => 'Detalle Registrado',
+  'datos' => 
+  array (
+    'id_factura' => '42859',
+    'cod_producto_debi' => '37',
+    'cantidad' => '2',
+    'pvp' => '10.00',
+    'descuento' => '1.00',
+    'subtotal' => 20.0,
+    'ice' => 0,
+    'base_cero' => 19.0,
+    'base_doce' => 0,
+    'iva' => 0,
+    'total' => 19.0,
+  ),
+)
+2021/12/07 19:36:18:  Registrar Detalle Venta 
+2021/12/07 19:36:18:  DATOS DE ENTRADA
+2021/12/07 19:36:18:  Datos: '42859'
+2021/12/07 19:36:18:  Consulta: UPDATE FACTURA_VENTA  
+                        SET	 
+                            SUBTOTAL = T.SUBTOTAL ,
+                            DESCUENTO= T.DESCUENTO,
+                            ICE= T.ICE,
+                            BASEIVACERO= T.BASE_IMPONIBLE_CERO,
+                            BASEIVADOCE= T.BASE_IMPONIBLE_DOCE,
+                            IVA= T.IVA,
+                            TOTAL= T.TOTAL + DIEZPORSERVICIOS
+                        FROM V_TOTALES_FACTURA_VENTA T
+                        WHERE FACTURA_VENTA.ID_FACTURA_VENTA = T.ID_FACTURA_VENTA
+                        AND FACTURA_VENTA.ID_FACTURA_VENTA=42859;
+2021/12/07 19:36:18:  Respuesta: array (
+  'error' => '0',
+  'mensaje' => 'Saldos Actualizados',
+  'datos' => '42859',
+)
+2021/12/07 19:36:19:  generarAsientoFacrura 
+2021/12/07 19:36:19:  DATOS DE ENTRADA
+2021/12/07 19:36:19:  Datos: '42859'
+2021/12/07 19:36:19:  Consulta: execute sp_genera_asiento_factura 42859
+2021/12/07 19:36:19:  Consulta: SELECT ID_ASIENTO FROM FACTURA_VENTA WHERE ID_FACTURA_VENTA=42859
+2021/12/07 19:36:19:  Respuesta: array (
+  'error' => '0',
+  'mensaje' => 'Saldos Actualizados',
+  'datos' => 
+  array (
+    'id_asiento' => 'I42112000004',
+  ),
+)
+2021/12/07 19:36:18:  Respuesta: array (
+  'error' => '0',
+  'mensaje' => 'Factura Registrado',
+  'datos' => 
+  array (
+    'id_factura' => '42859',
+    'id_asiento' => 'I42112000004',
+  ),
+)
+
